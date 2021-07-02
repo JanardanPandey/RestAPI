@@ -1,0 +1,10 @@
+
+from django.contrib import admin
+from django.urls import path
+
+from FunctionBasedAPIApp import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('student_api/', views.student_api),
+]
